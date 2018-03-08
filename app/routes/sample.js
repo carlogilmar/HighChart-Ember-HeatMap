@@ -25,8 +25,9 @@ export default Route.extend({
 			},
 			colorAxis: {
 				min: 0,
-				minColor: '#FFFFFF',
-				maxColor: '#000099'
+				gridLineColor:'#ffffff',
+				minColor: '#ffe6e6',
+				maxColor: '#9e0142'
 			},
 			legend: {
 				align: 'right',

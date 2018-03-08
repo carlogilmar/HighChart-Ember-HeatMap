@@ -1,2 +1,76 @@
-<h2> Propuestas de Gráficas </h2>
-{{outlet}}
+<div class="container">
+  <br>
+  <div class="header clearfix">
+    <nav>
+      <ul class="nav nav-pills pull-right">
+        <li role="presentation" class="active">{{#link-to 'sample'}} Gráficas Generales {{/link-to}}</li>
+        <li role="presentation" class="active">{{#link-to 'single'}} Gráficas Por Campus {{/link-to}}</li>
+      </ul>
+    </nav>
+    <h3 class="text-muted"> Making Devs</h3>
+  </div>
+
+  {{outlet}}
+
+  <br><br>
+
+  <div class="container">
+    <div class="row">
+      <section class="wrapperColor">
+        <div class="container-fostrap">
+          <div class="content">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-xs-12 col-sm-3">
+                  <div class="card">
+                    <a class="img-card" href="javascript:;" style="background:#e6aebd;">
+                    </a>
+                    <div class="card-content text-center">
+                      <h4>1: Nivel Latente</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <div class="card">
+                    <a class="img-card" href="javascript:;" style="background:#ce7594;">
+                    </a>
+                    <div class="card-content text-center">
+                      <h4>2: Nivel Imprecisa</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <div class="card">
+                    <a class="img-card" href="javascript:;" style="background:#b43d6b;">
+                    </a>
+                    <div class="card-content text-center">
+                      <h4>3: Nivel Gestándose</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <div class="card">
+                    <a class="img-card" href="javascript:;" style="background:#9c0943;">
+                    </a>
+                    <div class="card-content text-center">
+                      <h4>4: Nivel Produciendo</h4>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <p>&copy; Making Devs</p>
+  </footer>
+
+</div> <!-- /container -->
+
