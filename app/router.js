@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('single');
   this.route('sample');
   this.route('personal');
+  this.route('line-chart');
 });
 
 export default Router;
