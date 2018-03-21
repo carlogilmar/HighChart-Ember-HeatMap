@@ -21,7 +21,7 @@ export default Route.extend({
 				title:{
           text: "Nivel"
         },
-        categories: ['','Latente', 'Impreciso', 'Gestándose', 'Produciendo']
+        categories: ['','1 Latente', '2 Impreciso', '3 Gestándose', '4 Produciendo']
 			},
       tooltip: {
         shared: true,

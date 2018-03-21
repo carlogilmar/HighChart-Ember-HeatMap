@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('sample');
   this.route('personal');
   this.route('line-chart');
+  this.route('fake-bars');
 });
 
 export default Router;
