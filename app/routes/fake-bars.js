@@ -9,10 +9,10 @@ export default Route.extend({
     	    type: 'column'
     	},
     	title: {
-    	    text: 'Gráfica General Por '
+    	    text: 'Gráfica General De Prospectos'
     	},
     	xAxis: {
-    	    categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+				categories: ['Cultura EBC', 'Comunicación Interpersonal', 'Comunicación Intrapersonal', 'Gestión de Clase', 'Gestión Tecnológica', 'Liderazgo', 'Orientación al alumno', 'Vinculación laboral']
     	},
     	yAxis: {
     	    min: 0,
@@ -32,16 +32,16 @@ export default Route.extend({
     	series: [
 			{
     	    name: 'Nivel Produciendo',
-    	    data: [5, 3, 4, 7, 2]
+    	    data: [25,25,25,25,25,25,25,25]
     	}, {
     	    name: 'Nivel Gestándose',
-    	    data: [2, 2, 3, 2, 1]
+    	    data: [25,25,25,25,25,25,25,25]
     	}, {
     	    name: 'Nivel Impreciso',
-    	    data: [1, 4, 3, 2, 1]
+    	    data: [25,25,25,25,25,25,25,25]
     	}, {
     	    name: 'Nivel Latente',
-    	    data: [3, 4, 4, 2, 5]
+    	    data: [25,25,25,25,25,25,25,25]
     	}
 			]
 		};
