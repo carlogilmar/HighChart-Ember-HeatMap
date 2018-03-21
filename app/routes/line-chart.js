@@ -24,15 +24,16 @@ export default Route.extend({
         categories: ['','1 Latente', '2 Impreciso', '3 Gestándose', '4 Produciendo']
 			},
       tooltip: {
-        shared: true,
-        valueSuffix: ' units'
+				formatter: function () {
+          return "Nivel <b>"+ this.series.yAxis.categories[this.point.y]+"</b>"
+				}
       },
       plotOptions: {
         line: {
           dataLabels: {
             enabled: true
           },
-          enableMouseTracking: false
+          enableMouseTracking: true
         }
       },
       series: [{
