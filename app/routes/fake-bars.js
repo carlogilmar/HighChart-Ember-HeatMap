@@ -5,7 +5,7 @@ export default Route.extend({
 	model(){
 
 		let chartOptions = {
-			colors: ['green','blue','yellow','pink'],
+			colors: ['rgba(54, 162, 235, 0.2)','rgba(75, 192, 192, 0.2)','rgba(255, 206, 86, 0.2)','rgba(255, 99, 132, 0.2)'],
     	chart: {
     	    type: 'column'
     	},
@@ -22,7 +22,7 @@ export default Route.extend({
     	    }
     	},
     	tooltip: {
-    	    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+    	    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y} Prospectos</b> ({point.percentage:.0f}%)<br/>',
     	    shared: true
     	},
     	plotOptions: {
