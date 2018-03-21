@@ -17,7 +17,7 @@ export default Route.extend({
     	yAxis: {
     	    min: 0,
     	    title: {
-    	        text: 'Total fruit consumption'
+    	        text: '% de Prospectos Totales que realizaron la Evaluación'
     	    }
     	},
     	tooltip: {
