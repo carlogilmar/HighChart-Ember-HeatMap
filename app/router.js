@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('personal');
   this.route('line-chart');
   this.route('fake-bars');
+  this.route('charLuisito');
 });
 
 export default Router;
