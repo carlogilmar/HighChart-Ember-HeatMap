@@ -5,6 +5,7 @@ export default Route.extend({
 	model(){
 
 		let chartOptions = {
+			colors: ['green','blue','yellow','pink'],
     	chart: {
     	    type: 'column'
     	},
@@ -27,7 +28,7 @@ export default Route.extend({
     	plotOptions: {
     	    column: {
     	        stacking: 'percent'
-    	    }
+    	    },
     	},
     	series: [
 			{
