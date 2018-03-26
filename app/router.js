@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('line-chart');
   this.route('fake-bars');
   this.route('charLuisito');
+  this.route('prospect1');
 });
 
 export default Router;
