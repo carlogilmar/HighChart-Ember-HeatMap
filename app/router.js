@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('fake-bars');
   this.route('charLuisito');
   this.route('prospect1');
+  this.route('prospect2');
 });
 
 export default Router;
