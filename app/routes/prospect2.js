@@ -6,6 +6,7 @@ export default Route.extend({
 	model(){
 
 		let chartOptions = {
+			colors: ['rgba(55, 163, 235, 0.68)','rgba(74, 191, 191, 0.7)','rgba(255, 207, 87, 0.94)','rgba(255, 97, 131, 0.77)'],
 			chart: {
 				type: 'column'
 			},

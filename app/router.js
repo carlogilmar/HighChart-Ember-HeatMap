@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('charLuisito');
   this.route('prospect1');
   this.route('prospect2');
+  this.route('prospect3');
 });
 
 export default Router;

@@ -2,41 +2,39 @@ import Route from '@ember/routing/route';
 import RSVP from 'rsvp';
 
 export default Route.extend({
-
 	model(){
+
 		let chartOptions = {
-			colors: ['rgba(55, 163, 235, 0.68)','rgba(74, 191, 191, 0.7)','rgba(255, 207, 87, 0.94)','rgba(255, 97, 131, 0.77)'],
 			chart: {
-				type: 'column'
+				type: 'area'
 			},
 			title: {
-				text: ' Gráfica General de Resultados'
-			},
-			subtitle: {
-				text: ' Reclutamiento 2017 <br> Total de Evaluaciones: 100'
+				text: 'Resultados Generales de todas las Evaluaciones de Reclutamiento 2017'
 			},
 			xAxis: {
 				categories: ['Cultura EBC', 'Comunicación Interpersonal', 'Comunicación Intrapersonal', 'Gestión de Clase', 'Gestión Tecnológica', 'Liderazgo', 'Orientación al alumno', 'Vinculación laboral'],
-				crosshair: true
+				title: {
+					enabled: false
+				}
 			},
 			yAxis: {
-				min: 0,
 				title: {
-					text: 'Cantidad de Respuestas'
+					text: 'Percent'
 				}
 			},
 			tooltip: {
-				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-					'<td style="padding:0"><b>{point.y}</b></td></tr>',
-				footerFormat: '</table>',
-				shared: true,
-				useHTML: true
+				pointFormat: '<span style="color:{series.color}">{series.name}</span>: ({point.y} Prospectos)<br/>',
+				split: true
 			},
 			plotOptions: {
-				column: {
-					pointPadding: 0.2,
-					borderWidth: 0
+				area: {
+					stacking: 'percent',
+					lineColor: '#ffffff',
+					lineWidth: 1,
+					marker: {
+						lineWidth: 1,
+						lineColor: '#ffffff'
+					}
 				}
 			},
 			series: [{
@@ -61,7 +59,5 @@ export default Route.extend({
 		return RSVP.hash({
 			options: chartOptions,
 		});
-
 	}
-
 });
