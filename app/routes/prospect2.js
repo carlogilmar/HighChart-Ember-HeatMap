@@ -1,5 +1,6 @@
 import Route from '@ember/routing/route';
 import RSVP from 'rsvp';
+import Highcharts from 'ember-highcharts/components/high-charts';
 
 export default Route.extend({
 
@@ -42,23 +43,21 @@ export default Route.extend({
 					}
 				}
 			},
-    	series: [
+        series: [
 			{
-    	    name: 'Nivel Produciendo',
-    	    data: [25,25,25,25,25,25,25,25]
-    	}, {
-    	    name: 'Nivel Gestándose',
-    	    data: [25,25,25,25,25,25,25,25]
-    	}, {
-    	    name: 'Nivel Impreciso',
-    	    data: [25,25,25,25,25,25,25,25]
-    	}, {
-    	    name: 'Nivel Latente',
-    	    data: [25,25,25,25,25,25,25,25]
-    	}
-			]
-
-		};
+            name: 'Nivel Produciendo',
+            data: [25,25,25,25,25,25,25,25]
+        }, {
+            name: 'Nivel Gestándose',
+            data: [25,25,25,25,25,25,25,25]
+            }, {
+            name: 'Nivel Impreciso',
+            data: [25,25,25,25,25,25,25,25]
+        }, {
+            name: 'Nivel Latente',
+            data: [25,25,25,25,25,25,25,25]
+        }]
+	};
 
 		return RSVP.hash({
 			options: chartOptions,
