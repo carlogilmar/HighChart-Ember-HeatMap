@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('prospect1');
   this.route('prospect2');
   this.route('prospect3');
+  this.route('generalHistoricalChart');
 });
 
 export default Router;
