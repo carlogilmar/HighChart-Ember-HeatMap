@@ -5,31 +5,34 @@ export default Route.extend({
 
 	model(){
 		let chartOptions = {
-			chart: {
-				type: 'line'
-			},
 			title: {
 				text: 'Grafica General de Historicos'
 			},
+
 			subtitle: {
 				text: 'Evaluaciones'
 			},
-			xAxis: {
-				categories: ['Cultura EBC', 'Comunicacion Interpersonal', 'Comunicacion Intrapersonal', 'Gestion de Clase', 'Gestion Tecnologica', 'Liderazgo', 'Orientacion al alumno', 'Vinculacion laboral']
-			},
+
 			yAxis: {
 				title: {
 					text: 'Nivel'
 				}
 			},
+			legend: {
+				layout: 'vertical',
+				align: 'right',
+				verticalAlign: 'middle'
+			},
+
 			plotOptions: {
-				line: {
-					dataLabels: {
-						enabled: true
+				series: {
+					label: {
+						connectorAllowed: false
 					},
-					enableMouseTracking: false
+					pointStart: 2010
 				}
 			},
+
 			series: [{
 				name: 'LEO',
 				data: [1,2,3,4,4,3,2,1]
@@ -69,11 +72,25 @@ export default Route.extend({
 			}, {
 				name: 'CMX',
 				data: [1,4,1,2,4,3,1,2]
-			}]
-		};
+			}],
 
-		return RSVP.hash({
-			options: chartOptions,
-		});
+			responsive: {
+				rules: [{
+					condition: {
+						maxWidth: 500
+					},
+					chartOptions: {
+						legend: {
+							layout: 'horizontal',
+							align: 'center',
+							verticalAlign: 'bottom'
+						}
+					}
+				}]
+			}
+		};
+			return RSVP.hash({
+				options: chartOptions,
+			});
 	}
 });
