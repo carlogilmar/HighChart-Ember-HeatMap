@@ -19,6 +19,8 @@ Router.map(function() {
   this.route('generalHistoricalChart');
   this.route('comparativeHistoricalChart');
   this.route('individualHistoricalChart');
+  this.route('generalCampusChart');
+  this.route('comparativeHistoricalChart2');
 });
 
 export default Router;
