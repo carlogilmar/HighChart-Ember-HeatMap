@@ -24,6 +24,7 @@ Router.map(function() {
   this.route('pieProspect1');
   this.route('pieProspect2');
   this.route('pieProspectCampus');
+  this.route('pieProspectEvaluation');
 });
 
 export default Router;
