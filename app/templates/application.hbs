@@ -12,7 +12,7 @@
         <li role="presentation" class="active">{{#link-to 'prospect2'}} Gráficas Gral Propuesta 2 Reclu {{/link-to}}</li>
         <li role="presentation" class="active">{{#link-to 'prospect3'}} Gráficas Gral Propuesta 3 Reclu {{/link-to}}</li>
         <li role="presentation" class="active">{{#link-to 'generalHistoricalChart'}} Gráficas de evaluaciones de todos los campuses{{/link-to}}</li>
-        <li role="presentation" class="active">{{#link-to 'generalCampusChart'}} Gráficas Géneral por campus{{/link-to}}</li>        
+        <li role="presentation" class="active">{{#link-to 'generalCampusChart'}} Gráficas Géneral por campus{{/link-to}}</li>
         <li role="presentation" class="active">{{#link-to 'individualHistoricalChart'}} Gráficas Individual de Históricos {{/link-to}}</li>
         <li role="presentation" class="active">{{#link-to 'pieProspect1'}} Gráficas general de pie de campus 1{{/link-to}}</li>
         <li role="presentation" class="active">{{#link-to 'pieProspect2'}} Gráficas general de pie de campus 2{{/link-to}}</li>
@@ -20,11 +20,47 @@
         <li role="presentation" class="active">{{#link-to 'comparativeHistoricalChart2'}} Gráficas Comparativa de Históricos 2{{/link-to}}</li>
         <li role="presentation" class="active">{{#link-to 'pieProspectCampus'}} Gráficas de pie de campus {{/link-to}}</li>
         <li role="presentation" class="active">{{#link-to 'pieProspectEvaluation'}} Gráficas de pie de evaluación {{/link-to}}</li>
-        
       </ul>
     </nav>
 		<br><br>
     <h3 class="text-muted"> Making Devs</h3>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <h2> Propuestas para gráficas de Capacitación </h2>
+    <div class="col-md-6">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Primer Acercamiento a la Gráfica General de todos los campus</strong>
+          <br> <small> No se consideraron los años </small>
+          <br>{{#link-to 'comparativeHistoricalChart'}} Gráficas Comparativa de Históricos 1{{/link-to}}
+          <br>{{#link-to 'comparativeHistoricalChart2'}} Gráficas Comparativa de Históricos 2{{/link-to}}
+        </li>
+        <li class="list-group-item">
+          <strong>Propuesta 1: Gráfica de líneas</strong>
+          <br>{{#link-to 'generalHistoricalChart'}} Históricos por Evaluación {{/link-to}}
+          <br>{{#link-to 'generalCampusChart'}} Históricos por Campus{{/link-to}}
+          <br>{{#link-to 'individualHistoricalChart'}} Históricos individuales{{/link-to}}
+        </li>
+        <li class="list-group-item">
+          <strong>Propuesta 2: Gráficas Circulares</strong>
+          <br>
+          {{#link-to 'pieProspect1'}} Históricos por Campus 1{{/link-to}}
+          <br>
+          {{#link-to 'pieProspect2'}} Históricos por Campus 2{{/link-to}}
+        </li>
+        <li class="list-group-item">
+          <strong>Propuesta 3: Gráficas de Pastel</strong>
+          <br>
+          {{#link-to 'pieProspectCampus'}} Históricos de un Campus {{/link-to}}
+          <br>
+          {{#link-to 'pieProspectEvaluation'}} Históricos Generales de Evaluaciones {{/link-to}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6"></div>
   </div>
 
   {{outlet}}
