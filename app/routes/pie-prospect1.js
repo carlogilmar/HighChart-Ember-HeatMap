@@ -202,7 +202,7 @@ export default Route.extend({
           text: 'Grafica de pie de un campus por categorias'
         },
         subtitle: {
-          text: 'Evaluaciones'
+          text: 'Evaluacion'
         },
         plotOptions: {
           pie: {
