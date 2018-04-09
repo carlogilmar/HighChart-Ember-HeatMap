@@ -21,6 +21,8 @@ Router.map(function() {
   this.route('individualHistoricalChart');
   this.route('generalCampusChart');
   this.route('comparativeHistoricalChart2');
+  this.route('pieProspect1');
+  this.route('pieProspect2');
 });
 
 export default Router;
