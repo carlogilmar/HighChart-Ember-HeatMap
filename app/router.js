@@ -23,6 +23,8 @@ Router.map(function() {
   this.route('comparativeHistoricalChart2');
   this.route('pieProspect1');
   this.route('pieProspect2');
+  this.route('pieProspectCampus');
+  this.route('pieProspectEvaluation');
 });
 
 export default Router;
