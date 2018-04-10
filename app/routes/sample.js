@@ -26,8 +26,8 @@ export default Route.extend({
 			colorAxis: {
 				min: 0,
 				gridLineColor:'#ffffff',
-        minColor: '#FFFFFF',
-        maxColor: '#0066ff'
+        		minColor: '#FFFFFF',
+        		maxColor: '#0066ff'
 			},
 			legend: {
 				align: 'right',
@@ -37,6 +37,11 @@ export default Route.extend({
 				y: 25,
 				symbolHeight: 320
 			},
+			plotOptions:{
+            	series:{
+                	turboThreshold:5000//set it to a larger threshold, it is by default to 1000
+            	}
+        	},
 			tooltip: {
 				formatter: function () {
 					return '<b>' + this.series.xAxis.categories[this.point.x] + '</b> en <b>' + this.series.yAxis.categories[this.point.y] + '</b> con <b>'+
@@ -63,7 +68,7 @@ export default Route.extend({
 				color: 'white',
 				style: {
 					textShadow: 'none'
-				}
+				},
 			}
 		}];
 
