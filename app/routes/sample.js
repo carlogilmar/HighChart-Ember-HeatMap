@@ -14,7 +14,7 @@ export default Route.extend({
 				marginBottom: 40
 			},
 			title: {
-				text: 'Evaluación 2017'
+				text: 'Evaluación'
 			},
 			xAxis: {
 				categories: ['Cultura EBC', 'Comunicación Interpersonal', 'Comunicación Intrapersonal', 'Gestión de Clase', 'Gestión Tecnológica', 'Liderazgo', 'Orientación al alumno', 'Vinculación laboral']
